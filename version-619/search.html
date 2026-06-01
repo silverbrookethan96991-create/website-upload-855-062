@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>影视搜索 - 高分电视剧</title>
+    <meta name="description" content="搜索高分电视剧、热门电影、地区、年份、类型和标签，快速找到可在线播放的影视详情。">
+    <meta name="keywords" content="影视搜索,高分电视剧,热门电视剧,好看电视剧,电视剧大全,高清剧集,精选剧集">
+    <meta name="robots" content="index,follow">
+    <link rel="canonical" href="search.html">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container-custom header-inner">
+        <a class="brand" href="index.html" aria-label="高分电视剧首页">
+            <span class="brand-icon">▶</span>
+            <span class="brand-text">高分电视剧</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+            <a class="nav-link" href="index.html">首页</a>
+            <a class="nav-link" href="list-1.html">全部影片</a>
+            <a class="nav-link" href="category-tv-1.html">电视剧</a>
+            <a class="nav-link" href="category-movie-1.html">电影</a>
+            <a class="nav-link" href="region-japan-korea-1.html">日韩影视</a>
+            <a class="nav-link" href="region-europe-america-1.html">欧美佳作</a>
+            <a class="nav-link" href="rankings.html">排行榜</a>
+            <a class="nav-link active" href="search.html">搜索</a>
+        </nav>
+        <button class="mobile-toggle" type="button" aria-label="打开导航" data-mobile-toggle>☰</button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <div class="container-custom mobile-panel-inner">
+            <a class="nav-link" href="index.html">首页</a>
+            <a class="nav-link" href="list-1.html">全部影片</a>
+            <a class="nav-link" href="category-tv-1.html">电视剧</a>
+            <a class="nav-link" href="category-movie-1.html">电影</a>
+            <a class="nav-link" href="region-japan-korea-1.html">日韩影视</a>
+            <a class="nav-link" href="region-europe-america-1.html">欧美佳作</a>
+            <a class="nav-link" href="rankings.html">排行榜</a>
+            <a class="nav-link active" href="search.html">搜索</a>
+            <form class="mobile-search" action="search.html" method="get">
+                <input class="input-field" type="search" name="q" placeholder="搜索感兴趣的影视内容...">
+            </form>
+        </div>
+    </div>
+</header>
+
+<main>
+<section class="page-hero compact-hero">
+    <div class="container-custom">
+        <p class="eyebrow">快速搜索</p>
+        <h1>搜索电视剧、电影和精选剧集</h1>
+        <p>输入片名、地区、年份、类型或标签，查找对应详情页和播放入口。</p>
+        <form class="search-page-form" data-search-form>
+            <input class="input-field" type="search" name="q" data-search-input placeholder="例如：悬疑、2025、中国香港、爱情">
+            <button class="btn-primary" type="submit">搜索</button>
+        </form>
+    </div>
+</section>
+<section class="content-section">
+    <div class="container-custom">
+        <div class="section-heading">
+            <div>
+                <h2>搜索结果</h2>
+                <p data-search-summary>请输入关键词开始搜索。</p>
+            </div>
+        </div>
+        <div class="movie-grid" data-search-results></div>
+    </div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="container-custom footer-grid">
+        <div>
+            <a class="footer-brand" href="index.html">
+                <span class="brand-icon">▶</span>
+                <span>高分电视剧</span>
+            </a>
+            <p>围绕高口碑电视剧内容进行整理，涵盖国产、日韩、欧美等剧集方向，适合查找评价较好的剧集。</p>
+        </div>
+        <div>
+            <h3>影视分类</h3>
+            <a href="category-tv-1.html">电视剧大全</a>
+            <a href="category-movie-1.html">电影精选</a>
+            <a href="genre-juqing-1.html">剧情佳作</a>
+            <a href="genre-xuanyi-1.html">悬疑推荐</a>
+        </div>
+        <div>
+            <h3>地区频道</h3>
+            <a href="region-mainland-1.html">国产剧场</a>
+            <a href="region-hktw-1.html">港台经典</a>
+            <a href="region-japan-korea-1.html">日韩热播</a>
+            <a href="region-europe-america-1.html">欧美佳作</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 高分电视剧 在线点播平台 · 精品影视，高清观看。</p>
+    </div>
+</footer>
+<script src="assets/js/search-data.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

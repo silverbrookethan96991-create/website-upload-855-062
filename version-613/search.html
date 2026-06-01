@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索片库-热门电视剧-电视剧热播榜单-全集高清在线播放</title>
+    <meta name="description" content="搜索热门电视剧、热播榜单、影视标题、地区、年份、类型和标签，快速找到想看的高清内容。">
+    <meta name="keywords" content="热门电视剧,电视剧热播榜,热播电视剧,高清剧集,全集播放,电视剧片库">
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="site-logo" href="./index.html" aria-label="热播剧集榜">
+            <span class="logo-mark">剧</span>
+            <span class="logo-text">热播剧集榜</span>
+        </a>
+        <nav class="desktop-nav" aria-label="主导航">
+            <a class="nav-link" href="./index.html">首页</a>
+            <a class="nav-link" href="./categories.html">分类</a>
+            <a class="nav-link" href="./ranking.html">排行榜</a>
+            <a class="nav-link is-active" href="./search.html">搜索</a>
+        </nav>
+        <form class="header-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影视作品..." aria-label="搜索影视作品">
+            <button type="submit">搜索</button>
+        </form>
+        <button class="mobile-toggle" type="button" aria-label="展开菜单" data-mobile-toggle>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <div class="mobile-links">
+            <a class="nav-link" href="./index.html">首页</a>
+            <a class="nav-link" href="./categories.html">分类</a>
+            <a class="nav-link" href="./ranking.html">排行榜</a>
+            <a class="nav-link is-active" href="./search.html">搜索</a>
+        </div>
+        <div class="mobile-cats">
+            <a href="./category-hot-drama.html">热播剧场</a>
+            <a href="./category-classic-choice.html">口碑精选</a>
+            <a href="./category-urban-romance.html">都市情感</a>
+            <a href="./category-action-adventure.html">动作冒险</a>
+            <a href="./category-mystery-suspense.html">悬疑推理</a>
+        </div>
+        <form class="mobile-search" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索影视作品..." aria-label="搜索影视作品">
+            <button type="submit">搜索</button>
+        </form>
+    </div>
+</header>
+<main>
+    <section class="page-hero search-hero">
+        <div class="container page-hero-inner">
+            <span class="eyebrow">搜索片库</span>
+            <h1>搜索热门电视剧与高清影视</h1>
+            <p>输入片名、地区、年份、类型或标签，快速进入对应影片详情页。</p>
+            <div class="global-search-box">
+                <input type="search" id="globalSearchInput" placeholder="搜索视频标题、描述、分类或标签..." aria-label="搜索视频" data-global-search-input>
+            </div>
+            <div class="search-chips"><button type="button" data-search-chip="道士">道士</button><button type="button" data-search-chip="仙侠">仙侠</button><button type="button" data-search-chip="剑阵">剑阵</button><button type="button" data-search-chip="文艺">文艺</button><button type="button" data-search-chip="都市">都市</button><button type="button" data-search-chip="治愈">治愈</button><button type="button" data-search-chip="情感">情感</button><button type="button" data-search-chip="晨间剧">晨间剧</button><button type="button" data-search-chip="电视台">电视台</button><button type="button" data-search-chip="人质事件">人质事件</button><button type="button" data-search-chip="直播">直播</button><button type="button" data-search-chip="职业精神">职业精神</button><button type="button" data-search-chip="克隆人">克隆人</button><button type="button" data-search-chip="特工乌龙">特工乌龙</button><button type="button" data-search-chip="家庭危机">家庭危机</button><button type="button" data-search-chip="极限任务">极限任务</button><button type="button" data-search-chip="西游同人">西游同人</button><button type="button" data-search-chip="恶搞">恶搞</button><button type="button" data-search-chip="密室">密室</button><button type="button" data-search-chip="黑色幽默">黑色幽默</button><button type="button" data-search-chip="校园">校园</button><button type="button" data-search-chip="LGBT">LGBT</button><button type="button" data-search-chip="宗教">宗教</button><button type="button" data-search-chip="心理健康">心理健康</button></div>
+        </div>
+    </section>
+    <section class="container section-block">
+        <div class="search-status" data-search-status>请输入关键词开始搜索</div>
+        <div class="movie-grid search-results" data-search-results></div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="footer-logo" href="./index.html">热播剧集榜</a>
+            <p>汇总站内热度较高的电视剧内容，按热播、口碑与题材分类展示，适合快速浏览热门剧集。</p>
+        </div>
+        <div>
+            <h2>频道入口</h2>
+            <a href="./categories.html">分类浏览</a>
+            <a href="./ranking.html">热播榜单</a>
+            <a href="./search.html">搜索片库</a>
+        </div>
+        <div>
+            <h2>热门分类</h2>
+            <a href="./category-hot-drama.html">热播剧场</a>
+            <a href="./category-urban-romance.html">都市情感</a>
+            <a href="./category-mystery-suspense.html">悬疑推理</a>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 热播剧集榜. 保留所有权利.</div>
+</footer>
+<script src="./assets/js/movie-search-data.js"></script>
+<script src="./assets/js/main.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

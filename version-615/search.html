@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>搜索经典电视剧-经典剧集片库</title>
+  <meta name="description" content="搜索经典电视剧、热门剧集、题材标签、地区和年份，快速进入详情页在线观看。">
+  <meta name="keywords" content="经典电视剧,经典剧集,电视剧片库,剧集观看,高清电视剧,热门电视剧">
+  <link rel="stylesheet" href="./assets/style.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="./index.html" aria-label="经典剧集片库">
+      <span class="brand-mark">▶</span>
+      <span>经典剧集片库</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="展开导航" data-nav-toggle>☰</button>
+    <nav class="nav-links" data-nav-menu>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">分类</a>
+      <a href="./ranking.html">排行榜</a>
+      <a href="./search.html" class="active">搜索</a>
+      <a href="./category-classic-drama.html">经典剧情</a>
+      <a href="./category-family-romance.html">家庭爱情</a>
+      <a href="./category-history-war.html">历史战争</a>
+      <a href="./category-suspense-crime.html">悬疑犯罪</a>
+    </nav>
+    <form class="nav-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索剧集、题材、演员关键词" aria-label="搜索">
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main>
+  <section class="page-hero soft-hero">
+    <div class="container">
+      <span class="eyebrow">站内搜索</span>
+      <h1>搜索经典电视剧与剧集片库</h1>
+      <p>输入片名、题材、地区、年份或标签，快速定位想看的作品。</p>
+      <form class="big-search" action="./search.html" method="get">
+        <input type="search" name="q" placeholder="搜索片名、剧情、标签" data-search-input aria-label="搜索关键词">
+        <button type="submit">搜索</button>
+      </form>
+    </div>
+  </section>
+  <section class="home-section bg-white">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <h2>搜索结果</h2>
+          <p data-search-note>输入关键词后查看匹配内容。</p>
+        </div>
+      </div>
+      <div class="movie-grid" data-search-results></div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a class="footer-brand" href="./index.html">经典剧集片库</a>
+      <p>专注经典电视剧与剧集内容整理，按题材、地区与热度呈现高质量片库浏览体验。</p>
+    </div>
+    <div>
+      <h2>剧集分类</h2>
+      <div class="footer-links">
+        <a href="./category-classic-drama.html">经典剧情</a>
+        <a href="./category-family-romance.html">家庭爱情</a>
+        <a href="./category-history-war.html">历史战争</a>
+        <a href="./category-suspense-crime.html">悬疑犯罪</a>
+        <a href="./category-comedy-city.html">喜剧都市</a>
+        <a href="./category-fantasy-sci-fi.html">科幻奇幻</a>
+        <a href="./category-action-adventure.html">动作冒险</a>
+        <a href="./category-animation-healing.html">动画治愈</a>
+      </div>
+    </div>
+    <div>
+      <h2>站内入口</h2>
+      <div class="footer-links">
+        <a href="./categories.html">分类总览</a>
+        <a href="./ranking.html">热门排行</a>
+        <a href="./search.html">影片搜索</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 经典剧集片库</div>
+</footer>
+<script src="./assets/app.js"></script>
+<script src="./assets/search-index.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
